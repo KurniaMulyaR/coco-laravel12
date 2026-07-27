@@ -5,16 +5,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
 Route::get('/services', function () {
     return view('services');
-});
+})->name('services');
 
 // User page (public)
 Route::get('/client', function () {
     return view('client');
-});
+})->name('client');
 
 // Public store (no login)
 Route::post('/contact-messages', [\App\Http\Controllers\ContactMessagePublicController::class, 'store'])
