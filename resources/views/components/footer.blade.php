@@ -1,6 +1,10 @@
 <footer id="contact" class="footer">
      <div class="footer-logo">
+      <a href="{{ route('home') }}" 
+            class="{{ request()->routeIs('home') ? 'active' : '' }}" 
+            data-log-action="nav_home">
         <img src="{{ asset('assets/logo_coco.png') }}" alt="COCO Digital Agency" />
+     </a>
      </div>
       <div class="footer-logo-line"></div>
       <nav class="footer-nav">

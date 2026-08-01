@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       teks hero → 0.05  (hampir fixed)
   */
 
-  const parallaxBg       = document.querySelector('.hero-bg, .hero-bg-services');
+  const parallaxBg       = document.querySelector('.hero-bg-services');
   const flowers          = document.querySelectorAll('.flower');
   const balloons         = document.querySelectorAll('.balloon');
   const planes           = document.querySelectorAll('.plane');
@@ -223,31 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (planeR) planeR.style.transform = `translate(${y * 0.09}px, ${-y * 0.12}px) rotate(-6deg)`;
     if (planeL) planeL.style.transform = `scaleX(-1) translate(${y * 0.07}px, ${y * 0.08}px) rotate(4deg)`;
   }, { passive: true });
-
-  /* ── 8. WEARE PLANES ENTRANCE ANIMATION ──────── */
-  const warePlaneLeft  = document.querySelector('.weare-plane-left');
-  const warePlaneRight = document.querySelector('.weare-plane-right');
-
-  if (warePlaneLeft || warePlaneRight) {
-    const planeObserver = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          if (warePlaneLeft)  {
-            warePlaneLeft.style.transition  = 'left 1.2s cubic-bezier(0.22,1,0.36,1)';
-            warePlaneLeft.style.left        = '0';
-          }
-          if (warePlaneRight) {
-            warePlaneRight.style.transition = 'right 1.2s cubic-bezier(0.22,1,0.36,1)';
-            warePlaneRight.style.right      = '0';
-          }
-          planeObserver.disconnect();
-        }
-      });
-    }, { threshold: 0.2 });
-
-    const tornBottom = document.querySelector('.torn-bottom');
-    if (tornBottom) planeObserver.observe(tornBottom);
-  }
 
   /* ── 9. CARD STAGGER ANIMATION ───────────────── */
   const cardWrappers = document.querySelectorAll('.cards-wrapper');

@@ -1,6 +1,8 @@
 @php $activePage = $activePage ?? ''; @endphp
 <nav class="navbar" id="mainNavbar">
-    <img src="{{ asset('assets/Logo_Coco Agency_White.png') }}" alt="COCO Digital Agency" class="nav-logo" />
+    <a href="{{ route('home') }}" 
+        class="{{ request()->routeIs('home') ? 'active' : '' }}" 
+        data-log-action="nav_home"> <img src="{{ asset('assets/Logo_Coco Agency_White.png') }}" alt="COCO Digital Agency" class="nav-logo" /> </a>
 
     {{-- Desktop links --}}
     <ul class="nav-links">
