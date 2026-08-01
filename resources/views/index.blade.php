@@ -26,7 +26,6 @@
       </h1>
     </div>
   </section>
-
   <!-- ═══════════════════════════════════════
        WE ARE COCO
   ═══════════════════════════════════════ -->
@@ -50,7 +49,7 @@
 
   <div class="torn-bottom">
     <div class="torn-sky">
-      <img src="assets/Star 1.svg" alt="" class="weare-plane weare-plane-left img-weare-star" />
+      <img src="{{asset('assets/Star 1.svg')}}" alt="" class="weare-plane weare-plane-left img-weare-star" />
     </div>
   </div>
 </section>
