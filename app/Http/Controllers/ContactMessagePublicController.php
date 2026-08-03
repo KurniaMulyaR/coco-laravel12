@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 
 class ContactMessagePublicController extends Controller
 {
-    private const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf6pnzLZvCphGcKH3rT5MJiFf6pxD19D02_EwcQW-jpY8m5IA/formResponse';
+    private const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfc74TKTeI7zTbWEJGnEgmziz6Ea9rwM9pJv5jZa8ues5Ijtg/formResponse';
 
     public function store(Request $request)
     {
@@ -59,14 +59,13 @@ class ContactMessagePublicController extends Controller
         {
             try {
                 Http::asForm()->timeout(5)->post(self::GOOGLE_FORM_URL, [
-                    'entry.1926863613' => $data['name'],
-                    'entry.1150496354' => $data['email'],
-                    'entry.775943804'  => $data['phone'] ?? '',
-                    'entry.2014842371' => $data['message'] ?? '',
+                    'entry.1034547701' => $data['name'],
+                    'entry.1847060724' => $data['email'],
+                    'entry.521794176'  => $data['phone'] ?? '',
+                    'entry.1389403693' => $data['message'] ?? '',
                 ]);
             } catch (\Throwable $e) {
                 Log::warning('Failed to forward contact submission to Google Form: ' . $e->getMessage());
             }
         }
 }
-

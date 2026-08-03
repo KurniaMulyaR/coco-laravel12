@@ -73,7 +73,6 @@
     </div>
 
     <div class="belief-row belief-row-3">
-
       <div class="belief-card reveal reveal-delay-1">
         <div class="belief-icon2">
           <img src="{{asset('assets/icons/Relevance_wins.png')}}" alt="Relevance Wins" class="belief-icon" />
@@ -103,11 +102,9 @@
           Every idea has a clear purpose. We design campaigns that are not only visually strong but also deliver measurable results.
         </p>
       </div>
-
     </div>
 
     <div class="belief-row belief-row-2">
-
       <div class="belief-card reveal reveal-delay-1">
         <div class="belief-icon2">
           <img src="{{asset('assets/icons/culture_before.png')}}" alt="Culture Before Clicks" class="belief-icon" />
@@ -127,11 +124,8 @@
           Campaigns are never static. We continuously learn from performance and adapt quickly to drive stronger outcomes.
         </p>
       </div>
-
     </div>
-
   </div>
-
 </section>
 @endsection
 
