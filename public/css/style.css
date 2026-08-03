@@ -56,12 +56,11 @@ html, body {
   padding: 0 48px;
   box-sizing: border-box;
   text-align: center;
-  margin-left: 24rem;
 }
 
 .hero-content h1 {
   line-height: 1.15;
-  margin: 0;
+  margin: 0 auto;
   max-width: 960px;
 }
 
@@ -1421,7 +1420,7 @@ html, body {
 
 .stage {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1900px;
     height: 140px;
     position: relative;
     /* fade edges kiri-kanan */
@@ -1434,7 +1433,7 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    perspective: 1000px; /* dari 500px */
+    perspective: 500px; /* dari 500px */
   }
  
   /* === "Arms": bagian yang berputar terus menerus === */
@@ -1475,15 +1474,11 @@ html, body {
     width: 200px;      /* box tetap sama untuk semua logo */
     height: 200px;       /* eksplisit, bukan auto lagi */
     object-fit: contain; /* sekarang beneran kepakai */
-    object-position: center;
-    transition: filter 0.25s ease;
   }
  
   .arm img:hover {
     filter: grayscale(0%) opacity(1);
   }
- 
-  .stage:hover .arms { animation-play-state: paused; }
 
  .form-card{
     position:relative;

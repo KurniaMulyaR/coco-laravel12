@@ -54,37 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', setActive, { passive: true });
   setActive();
 
-  /* ── 3. BUBBLE GENERATOR ──────────────────────── */
-  const heroSection = document.querySelector('.hero-section, .hero-section-services');
-
-  function createBubble() {
-    if (!heroSection) return;
-    const b = document.createElement('div');
-    b.classList.add('bubble');
-    const size  = Math.random() * 80 + 20;
-    const x     = Math.random() * 95;
-    const dur   = Math.random() * 10 + 10;
-    const delay = Math.random() * 12;
-    b.style.cssText = `
-      width:${size}px; height:${size}px;
-      left:${x}%; bottom:-${size + 20}px;
-      animation-duration:${dur}s;
-      animation-delay:-${delay}s;
-    `;
-    heroSection.appendChild(b);
-    setTimeout(() => b.remove(), (dur + delay) * 1000);
-  }
-
-  if (heroSection) {
-    // Staggered reveal untuk cards
-    document.querySelectorAll('.card').forEach((card, i) => {
-      card.classList.add('reveal', `reveal-delay-${(i % 4) + 1}`);
-    });
-
-    for (let i = 0; i < 18; i++) createBubble();
-    setInterval(createBubble, 1200);
-  }
-
   /* ── 4. SCROLL REVEAL (IntersectionObserver) ─── */
   const revealClasses = ['.reveal', '.reveal-left', '.reveal-right', '.reveal-scale'];
   const revealEls = document.querySelectorAll(revealClasses.join(','));

@@ -12,6 +12,7 @@
       <!-- fallback opsional -->
       Your browser does not support the video tag.
     </video>
+    <div class="hero-overlay"></div>
 
     <!-- <img src="assets/Star 2.svg" alt="" class="flower star-bottom-left" data-parallax="0.30" />
     <img src="assets/Star 1.svg" alt="" class="flower star-right-mid" data-parallax="0.22" /> -->
@@ -41,7 +42,7 @@
       <p class="weare-desc reveal reveal-delay-1">
         The digital partner helping brands navigate the evolving landscape
         of culture, media, and technology. Crafting campaigns and experiences
-        that spark connection, relevance, and measurable impact.
+        that spark connection, relevance, and measurable impact."
       </p>
     </div>
   </div>
@@ -72,6 +73,7 @@
     </div>
 
     <div class="belief-row belief-row-3">
+
       <div class="belief-card reveal reveal-delay-1">
         <div class="belief-icon2">
           <img src="{{asset('assets/icons/Relevance_wins.png')}}" alt="Relevance Wins" class="belief-icon" />
@@ -101,9 +103,11 @@
           Every idea has a clear purpose. We design campaigns that are not only visually strong but also deliver measurable results.
         </p>
       </div>
+
     </div>
 
     <div class="belief-row belief-row-2">
+
       <div class="belief-card reveal reveal-delay-1">
         <div class="belief-icon2">
           <img src="{{asset('assets/icons/culture_before.png')}}" alt="Culture Before Clicks" class="belief-icon" />
@@ -123,8 +127,11 @@
           Campaigns are never static. We continuously learn from performance and adapt quickly to drive stronger outcomes.
         </p>
       </div>
+
     </div>
+
   </div>
+
 </section>
 @endsection
 
