@@ -77,7 +77,8 @@
 
       <div class="card card6">
         <div class="info-box">
-            <h2 class="headline">Creator Logistics and Product Operations</h2>
+            <p class="eyebrow">Creator Logistics and</p>
+            <h2 class="headline">Product Operations</h2>
             <p class="desc">Product receiving, storage, packing, and distribution for creators and affiliates, ensuring smooth execution across all campaign activations.</p>
         </div>
       </div>

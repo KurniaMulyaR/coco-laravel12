@@ -12,6 +12,7 @@
       <!-- fallback opsional -->
       Your browser does not support the video tag.
     </video>
+    <div class="hero-overlay"></div>
 
     <!-- <img src="assets/Star 2.svg" alt="" class="flower star-bottom-left" data-parallax="0.30" />
     <img src="assets/Star 1.svg" alt="" class="flower star-right-mid" data-parallax="0.22" /> -->
@@ -41,7 +42,7 @@
       <p class="weare-desc reveal reveal-delay-1">
         The digital partner helping brands navigate the evolving landscape
         of culture, media, and technology. Crafting campaigns and experiences
-        that spark connection, relevance, and measurable impact.
+        that spark connection, relevance, and measurable impact."
       </p>
     </div>
   </div>

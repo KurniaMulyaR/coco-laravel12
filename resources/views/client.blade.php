@@ -32,8 +32,8 @@
   ═══════════════════════════════════════ -->
   <section class="card-our-client-section">
     <div class="clients-section">
-      <div class="stage" data-speed="26" data-dir="cw"></div>
-      <div class="stage" data-speed="26" data-dir="cw"></div>
+      <div class="stage" data-speed="24" data-dir="cw"></div>
+      <div class="stage" data-speed="25" data-dir="cw"></div>
       <div class="stage" data-speed="26" data-dir="cw"></div>
     </div>
   </section>
@@ -75,7 +75,7 @@
 
       <div class="field">
         <label for="phone">Phone</label>
-        <input type="text" inputmode="numeric" id="phone" name="phone" placeholder="Enter your phone here" value="{{ old('phone') }}">
+        <input type="number" inputmode="numeric" id="phone" name="phone" placeholder="Enter your phone here" value="{{ old('phone') }}">
         @error('phone')
           <small style="color:#ff8080;">{{ $message }}</small>
         @enderror
@@ -88,7 +88,7 @@
           <small style="color:#ff8080;">{{ $message }}</small>
         @enderror
       </div>
-
+	
       <div class="submit-row">
         <button type="submit" class="submit-btn">Send Message</button>
       </div>
@@ -105,7 +105,7 @@
         { name: "MakeOver",    src: "assets/ourclient/makeover.png" },
         { name: "Aqua",  src: "assets/ourclient/aqua.png" },
         { name: "Kahf", src: "assets/ourclient/kahf.png" },
-        { name: "Tavi", src: "assets/ourclient/tavi.png" },
+        { name: "Tavi", src: "assets/ourclient/Tavi.png" },
         { name: "Azzura", src: "assets/ourclient/azzura.png" }
       ],
       [
