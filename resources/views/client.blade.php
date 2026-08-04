@@ -40,7 +40,7 @@
   <!-- ═══════════════════════════════════════
        GET IN TOUCH
   ═══════════════════════════════════════ -->
-  <section id="about" class="card-client-section">
+  <section id="contact" class="card-client-section">
 
     <video class="client-bg" autoplay muted loop playsinline poster="assets/Home_page_section3.png">
       <source src="{{asset('assets/vidios/OurClientsPage.mp4')}}" type="video/mp4" />

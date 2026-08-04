@@ -11,6 +11,7 @@
         <a href="{{ url('/') }}">Home</a>
         <a href="{{ url('/services') }}">Services</a>
         <a href="{{ url('/client') }}">Clients</a>
+        <a href="{{ url('/client') }}#contact">Contact Us</a>
       </nav>
 
       <p class="footer-privacy">Privacy Notice &amp; Terms of Services</p>
@@ -22,6 +23,10 @@
         <a href="https://www.tiktok.com/@itscocoagency" target="_blank" rel="noopener" aria-label="TikTok" data-log-action="social_tiktok">
 
           <i class="ti ti-brand-tiktok"></i>
+        </a>
+        <a href="https://wa.me/6287784721690" target="_blank" rel="noopener" aria-label="WhatsApp" data-log-action="social_whatsapp">
+
+          <i class="ti ti-brand-whatsapp"></i>
         </a>
       </div>
 

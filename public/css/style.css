@@ -144,7 +144,7 @@ html, body {
  
   .stage { height: 90px; }
   .arm { width: 90px; margin-left: -70px; }
-  .arm img { max-height: 150px; max-width: 120px; }
+  .arm img { max-height: 200px; max-width: 200px; }
  
   .form-card { padding: 24px 18px 28px; }
   .form-title { font-size: 20px; }

@@ -21,6 +21,10 @@
             class="{{ request()->routeIs('client') ? 'active' : '' }}" 
             data-log-action="nav_client">Client</a>
         </li>
+        <li>
+            <a href="{{ route('client') }}#contact"  
+            data-log-action="nav_client">Contact Us</a>
+        </li>
     </ul>
 
     {{-- Hamburger button --}}
@@ -37,6 +41,7 @@
         <li><a href="{{ url('/') }}" {{ $activePage === 'home' ? 'active' : '' }} data-log-action="nav_home">Home</a></li>
         <li><a href="{{ url('/services') }}" {{ $activePage === 'services' ? 'active' : '' }} data-log-action="nav_services">Services</a></li>
         <li><a href="{{ url('/client') }}" {{ $activePage === 'client' ? 'active' : '' }} data-log-action="nav_client">Client</a></li>
+        <li><a href="{{ url('/client') }}#contact" {{ $activePage === 'client' ? 'active' : '' }} data-log-action="nav_client">Contact Us</a></li>
 
     </ul>
 </div>
